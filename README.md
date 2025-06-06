@@ -2,8 +2,6 @@
 
 A responsive web app built with **Next.js** to explore chapter-wise Previous Year Questions (PYQs) for JEE Main — across **Physics**, **Chemistry**, and **Mathematics**.
 
-![Preview](./public/preview-desktop-mobile.png)
-
 ---
 
 ## 🚀 Features
