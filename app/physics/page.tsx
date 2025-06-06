@@ -175,7 +175,7 @@ export default function PhysicsPage() {
         {/* Right scroll button (mobile only) */}
         <button
           type="button"
-          className="absolute -right-[2px] top-1/2 -translate-y-1/2 bg-white dark:bg-[#181F2A] rounded-full pl-2 py-3 z-10 md:hidden  border-gray-300 dark:border-[#2D3748]"
+          className="absolute -right-[2px] top-1/2 -translate-y-1/2 bg-white dark:bg-[#181F2A] rounded-full pl-2 pr-4 py-3 z-10 md:hidden  border-gray-300 dark:border-[#2D3748]"
           onClick={scrollFilterBarRight}
           style={{ alignItems: 'center' }}
         >
