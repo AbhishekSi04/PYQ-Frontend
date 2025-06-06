@@ -12,9 +12,7 @@ import {
   Magnet,
   WaveSine,
   Cube,
-  CaretRight,
-  CaretLeft,
-  LineVertical,
+  CaretRight,  LineVertical,
 } from '@phosphor-icons/react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -49,7 +47,7 @@ const mathematicsChapters = d2d.filter((item) => item.subject === 'Mathematics')
 // Get unique values for filters
 const classes = [...new Set(mathematicsChapters.map((chapter) => chapter.class))];
 const units = [...new Set(mathematicsChapters.map((chapter) => chapter.unit))];
-const statuses = [...new Set(mathematicsChapters.map((chapter) => chapter.status))];
+// const statuses = [...new Set(mathematicsChapters.map((chapter) => chapter.status))];
 
 export default function MathematicsPage() {
   const [selectedClass, setSelectedClass] = useState<string>('all');
@@ -60,17 +58,17 @@ export default function MathematicsPage() {
 
   const filterBarRef = useRef<HTMLDivElement>(null);
 
-  const scrollFilterBar = () => {
-    if (filterBarRef.current) {
-      filterBarRef.current.scrollBy({ left: 120, behavior: 'smooth' });
-    }
-  };
+  // const scrollFilterBar = () => {
+  //   if (filterBarRef.current) {
+  //     filterBarRef.current.scrollBy({ left: 120, behavior: 'smooth' });
+  //   }
+  // };
 
-  const scrollFilterBarLeft = () => {
-    if (filterBarRef.current) {
-      filterBarRef.current.scrollBy({ left: -120, behavior: 'smooth' });
-    }
-  };
+  // const scrollFilterBarLeft = () => {
+  //   if (filterBarRef.current) {
+  //     filterBarRef.current.scrollBy({ left: -120, behavior: 'smooth' });
+  //   }
+  // };
 
   const scrollFilterBarRight = () => {
     if (filterBarRef.current) {
