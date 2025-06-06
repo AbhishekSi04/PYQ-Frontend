@@ -189,7 +189,7 @@ export default function ChemistryPage() {
         {/* Sort dropdown  */}
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <button className="text-blue-600 dark:text-[#2563eb] flex flex-row items-center gap-1 text-sm md:text-base font-medium focus:outline-none cursor-pointer">
+            <button className="text-blue-500 dark:text-[#2563eb] flex flex-row items-center gap-1 text-sm md:text-base font-medium focus:outline-none cursor-pointer">
               <ArrowsDownUp size={18} className="mr-1" />
               <span>Sort</span>
             </button>
@@ -199,19 +199,19 @@ export default function ChemistryPage() {
               onClick={() => setSortOption('mostAsked')}
               className={sortOption === 'mostAsked' ? 'font-semibold text-blue-600 dark:text-[#FB923C]' : ''}
             >
-              Most Asked Qs
+              Most Asked Chapters
             </DropdownMenuItem>
             <DropdownMenuItem
               onClick={() => setSortOption('lessPracticed')}
               className={sortOption === 'lessPracticed' ? 'font-semibold text-blue-600 dark:text-[#FB923C]' : ''}
             >
-              Less Practiced Qs
+              Less Practiced Chapters
             </DropdownMenuItem>
             <DropdownMenuItem
               onClick={() => setSortOption('more2025')}
               className={sortOption === 'more2025' ? 'font-semibold text-blue-600 dark:text-[#FB923C]' : ''}
             >
-              More Qs in 2025
+              More Questions Chapter in 2025
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>

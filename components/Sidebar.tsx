@@ -20,7 +20,7 @@ const subjects = [
     name1: 'Phy',
     path: '/physics',
     icon: (
-      <Atom  weight="duotone" className="inline p-1 md:w-7 md:h-7 w-6 h-6 rounded-md text-white bg-orange-500" />
+      <Atom  weight="duotone" className="inline p-1  w-6 h-6 rounded-md text-white bg-orange-500" />
     ),
   },
   {
@@ -28,7 +28,7 @@ const subjects = [
     name1: 'Chem',
     path: '/chemistry',
     icon: (
-      <Flask  weight="duotone" className="inline p-1 md:w-7 md:h-7 w-6 h-6 rounded-md text-white bg-green-500" />
+      <Flask  weight="duotone" className="inline p-1  w-6 h-6 rounded-md text-white bg-green-500" />
     ),
   },
   {
@@ -36,7 +36,7 @@ const subjects = [
     name1: 'Math',
     path: '/mathematics',
     icon: (
-      <Function  weight="duotone" className="inline p-1 md:w-7 md:h-7 w-6 h-6 rounded-md text-white bg-blue-500" />
+      <Function  weight="duotone" className="inline p-1 w-6 h-6 rounded-md text-white bg-blue-500" />
     ),
   },
 ];
@@ -66,16 +66,16 @@ export default function Sidebar() {
             <li key={subj.path}>
               <Link
                 href={subj.path}
-                className={`flex items-center gap-2 px-4 py-3 text-sm rounded-md transition dark:text-white ${
+                className={`flex items-center gap-4 px-4 py-3 text-sm rounded-md transition dark:text-white ${
                   pathname === subj.path
-                    ? 'bg-gray-900 text-white font-semibold dark:bg-[#232B3B] dark:text-[#FB923C]'
+                    ? 'bg-[#181F2A] text-white font-semibold dark:bg-[#232B3B] dark:text-[#FB923C]'
                     : 'hover:bg-gray-100 text-gray-700 font-semibold dark:hover:bg-[#232B3B] dark:text-[#E2E8F0]'
                 }`}
               >
                 {subj.icon}
                 {subj.name}
-                {pathname === subj.path && (
-                  <CaretRight className="ml-auto text-white dark:text-white" size={20} />
+                { (
+                  <CaretRight className="ml-auto dark:text-white" size={20} />
                 )}
               </Link>
             </li>

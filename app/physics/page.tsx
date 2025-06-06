@@ -199,19 +199,19 @@ export default function PhysicsPage() {
               onClick={() => setSortOption('mostAsked')}
               className={sortOption === 'mostAsked' ? 'font-semibold text-blue-600 dark:text-[#FB923C]' : ''}
             >
-              Most Asked Qs
+              Most Asked Chapters
             </DropdownMenuItem>
             <DropdownMenuItem
               onClick={() => setSortOption('lessPracticed')}
               className={sortOption === 'lessPracticed' ? 'font-semibold text-blue-600 dark:text-[#FB923C]' : ''}
             >
-              Less Practiced Qs
+              Less Practiced Chapters
             </DropdownMenuItem>
             <DropdownMenuItem
               onClick={() => setSortOption('more2025')}
               className={sortOption === 'more2025' ? 'font-semibold text-blue-600 dark:text-[#FB923C]' : ''}
             >
-              More Qs in 2025
+              More Questions Chapter in 2025
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
