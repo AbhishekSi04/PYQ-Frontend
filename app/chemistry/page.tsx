@@ -211,7 +211,7 @@ export default function ChemistryPage() {
               onClick={() => setSortOption('more2025')}
               className={sortOption === 'more2025' ? 'font-semibold text-blue-600 dark:text-[#FB923C]' : ''}
             >
-              More Questions Chapter in 2025
+              Most Questions in 2025
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
