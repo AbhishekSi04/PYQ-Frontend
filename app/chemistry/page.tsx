@@ -34,13 +34,13 @@ import {
 
 // Icons to assign to chapters (looped using modulo)
 const iconList = [
-  <Atom size={18} className="text-orange-500 " />,
-  <FuncIcon size={18} className="text-indigo-500" />,
-  <Ruler size={18} className="text-blue-500" />,
-  <ChartLine size={18} className="text-pink-500" />,
-  <Magnet size={18} className="text-green-500" />,
-  <WaveSine size={18} className="text-cyan-600" />,
-  <Cube size={18} className="text-red-400" />,
+  <Atom key="atom" size={18} className="text-orange-500 " />,
+  <FuncIcon key="func" size={18} className="text-indigo-500" />,
+  <Ruler key="ruler" size={18} className="text-blue-500" />,
+  <ChartLine key="chart" size={18} className="text-pink-500" />,
+  <Magnet key="magnet" size={18} className="text-green-500" />,
+  <WaveSine key="wave" size={18} className="text-cyan-600" />,
+  <Cube key="cube" size={18} className="text-red-400" />,
 ];
 
 const chemistryChapters = d2d.filter((item) => item.subject === 'Chemistry');
