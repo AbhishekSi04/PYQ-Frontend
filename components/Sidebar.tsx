@@ -107,7 +107,7 @@ export default function Sidebar() {
         </div>
 
         {/* Subject tabs */}
-        <div className="flex justify-between  px-2">
+        <div className="flex justify-between  px-6">
           {subjects.map((subj) => (
             <Link
               key={subj.path}

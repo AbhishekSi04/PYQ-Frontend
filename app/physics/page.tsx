@@ -116,7 +116,7 @@ export default function PhysicsPage() {
       <p className="md:text-sm md:text-center md:text-gray-500 md:mt-3 md:mb-5 hidden md:block dark:text-[#E2E8F0]">Chapter-wise Collection of Physics PYQs</p>
 
       {/* Filters with scroll button */}
-      <div className="relative flex items-center md:mb-4 mb-2">
+      <div className="relative flex items-center md:mb-4 mb-2 px-4 md:px-0">
         <div
           ref={filterBarRef}
           className="hide-scrollbar flex gap-2 overflow-x-auto flex-nowrap scrollbar-hide w-full dark:bg-[#181F2A]  rounded-md"
@@ -182,7 +182,7 @@ export default function PhysicsPage() {
           <CaretRight size={20} className="dark:text-[#E2E8F0]" />
         </button>
       </div>
-      <div className='flex flex-row justify-between gap-4 pb-4 pt-2 md:mb-2 m'>
+      <div className='flex flex-row justify-between gap-4 pb-4 pt-2 md:mb-2 px-4 md:px-0'>
         <div className="text-[13px] md:text-sm text-gray-500 dark:text-[#E2E8F0]">
           Showing {filteredChapters.length} of {physicsChapters.length} chapters
         </div>
