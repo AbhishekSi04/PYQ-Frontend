@@ -211,7 +211,7 @@ export default function PhysicsPage() {
               onClick={() => setSortOption('more2025')}
               className={sortOption === 'more2025' ? 'font-semibold text-blue-600 dark:text-[#FB923C]' : ''}
             >
-              Most Questions in 2025
+              More Questions in '25 than '24
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
